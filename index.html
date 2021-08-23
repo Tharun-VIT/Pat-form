@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pat Form</title>
+	<style>
+		.form{
+			font-size: 20px;
+			padding-left: 38%;
+		}
+		input[type=text], input[type=tel], input[type=date], input[type=email]{
+			width: 30%;
+			padding: 5px;
+		}
+		select {
+			width: 32%;
+			padding: 7px;
+		}
+		input[type=radio]{
+			width: 10%;
+		}
+		.head{
+			border-bottom: 5px #aaa solid;
+			margin: 0;
+		}
+		input[type=submit],input[type=file]{
+			padding: 5px;
+		}
+		.head{
+			background: #C1E0BA;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100% ; 
+		}
+		body{
+			width: 100%;
+			height: 100% ; 
+			margin: 0;
+			color:#40514E;
+  			font-family: 'Caveat', cursive;
+		}
+		h1{
+			margin: 0;
+			padding: 20px;
+			height: 100%;
+  		    color:#66bfbf;
+  			font-family: 'Dancing Script', cursive;
+		    font-size:4rem;
+		}
+		.read-img{
+			position: absolute;
+			left: 5%;
+			top: 40%;
+		}
+		.mount-img{
+			position: absolute;
+			right: 5%;
+			top: 95%;
+		}
+		.cloud1-img{
+			position: absolute;
+			right: 8%;
+			top: 96%;
+		}
+		.cloud2-img{
+			position: absolute;
+			right: 25%;
+			top: 50%;
+		}
+		.cap-img{
+			position: absolute;
+			left: 5%;
+			top: 130%;
+		}
+		.Submit {
+		   background: #11CDD4;
+		   background-image: -webkit-linear-gradient(top, #11CDD4, #195ECF);
+		   background-image: -moz-linear-gradient(top, #11CDD4, #195ECF);
+		   background-image: -ms-linear-gradient(top, #11CDD4, #195ECF);
+		   background-image: -o-linear-gradient(top, #11CDD4, #195ECF);
+		   background-image: -webkit-gradient(to bottom, #11CDD4, #195ECF);
+		   border-radius: 8px;
+		   line-height: 2;
+		   color: #FFFFFF;
+		   font-family:'Caveat', cursive ;
+		   width: 108px;
+		   font-size: 16px;
+		   padding: 25px;
+		   border: solid #337FED 0;
+		   cursor: pointer;
+		   text-align: center;
+		}
+
+		.Submit:hover {
+		   background: #30E3CB;
+		}		
+	</style>
+</head>
+<body bgcolor="#defdfe">
+	<div class="head">
+		<h1><center>PAT REGISTRATION FORM</center></h1>
+	</div>
+	<div>
+		<div class="read-img">
+			<img src="read.jpeg" style="float" width="300" height="300">
+		</div>
+		<div class="mount-img">
+			<img src="web.jpeg" style="float" width="400" height="300">
+		</div>
+		<div class="cloud1-img">
+			<img src="cloud.jpeg" style="float" width="100" height="50">
+		</div>
+		<div class="cloud2-img">
+			<img src="cloud.jpeg" style="float" width="100" height="50">
+		</div>
+		<div class="cap-img">
+			<img src="cap.jpg" style="float" width="300" height="200">
+		</div>
+		<div class="form">
+			<form>
+				<br><br>
+				<br>Name* : <br>
+				<input type="text" name="Name" placeholder="Name" required><br>
+				<br>Reg No* : <br>
+				<input type="text" name="Reg No" placeholder="Reg No" required><br>
+				<br>Gender* : <br>
+				<input type="radio" name="Sex">Male<br>
+				<input type="radio" name="Sex">Female<br>
+				<br>Mobile No* : <br>
+				<input type="tel" name="Mobile" placeholder="Mobile" pattern="[6-9]{1}[0-9]{9}" required><br>
+				<br>CGPA : <br>
+				<input type="range" min="0" max="10" value="5"><br>
+				<br>University* : <br>
+				<input type="text" name="Institution" placeholder="Institution" required><br>
+				<br>Select your course* : <br>
+				<select name="Course" placeholder="course" required><br>
+					<option>B.Sc</option>
+					<option>B.tech</option>
+					<option>B.Arch</option>
+					<option>M.Tech</option>
+					<option>M.Tech Intg</option>
+					<option>M.Sc</option>
+				</select><br>
+				<br>Profile* : <br>
+				<select name="profile" placeholder="profile" required><br>
+					<option>Jr Data Scientist</option>
+					<option>System Analyst</option>
+					<option>Business Analyst</option>
+					<option>Operation Manager</option>
+					<option>Technician</option>
+					<option>Sales Representative</option>
+				</select><br>
+				<br>Date of Birth : <br>
+				<input type="date" name="Date" placeholder="Date"><br>
+				<br>Email* : <br>
+				<input type="email" name="Email" placeholder="Email" required><br>
+				<br>Center preference for Interview* : <br>
+				<select name="centre" placeholder="centre" required><br>
+					<option>Chennai</option>
+					<option>Bangalore</option>
+					<option>Vellore</option>
+					<option>Hyderabad</option>
+					<option>Coimbatore</option>
+					<option>Amaravati</option>
+				</select><br>
+				<br>Upload certificate* : <br>
+				<input type="file" name="File" placeholder="Upload" required><br>
+				<br><br>
+				<input type="checkbox" required>I agree that the details mentioned above is correct<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="submit" name="Submit" class="Submit"><br><br><br><br>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
